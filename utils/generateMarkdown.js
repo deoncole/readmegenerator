@@ -24,7 +24,23 @@ function generateMarkdown(data) {
   [License](#license)
   [Contributing](#contributing)
   [Tests](#tests)
-  [Questions](#questions)  
+  [Questions](#questions) 
+  
+  ## Installation
+  ${data.usage}
+
+  ##Usage
+  ${data.usage}
+
+  ##Contributors
+  Github user name: (#${data.contributors})
+
+  ##License
+  ${data.license}
+
+  ## Tests
+
+
 `;
 }
 

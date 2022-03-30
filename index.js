@@ -6,9 +6,6 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { type } = require('os');
 
-// TODO: Create an array of questions for user input
-const questions = [];
-
 const licenseChoices = ['MIT','Apache','Mozilla','Perl','Eclipse'];
 
 // TODO: Create a function to write README file
@@ -93,13 +90,13 @@ function init() {
         {
             type: 'list',
             name: 'license',
-            message: 'Chose the necessary license for this project (Reguired)',
+            message: 'Chose the necessary license for this project',
             choices: licenseChoices
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Write your tests for your application and provide examples on how to run them here. (Reguired)',
+            message: 'Write your tests for your application and provide examples on how to run them here',
         },
         {
             type: 'input',

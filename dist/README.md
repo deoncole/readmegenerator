@@ -1,10 +1,10 @@
 
-  # **FINAL TEST**
+  # **Rick & Morty README**
 
-  [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  asfasfasfas
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   ## Table of Contents
   *[Installation](#installation)
@@ -15,22 +15,22 @@
   *[Questions](#questions) 
   
   ## Installation
-  adafsfdfasdfsadfasdfasdf
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   ## Usage
-  adafsfdfasdfsadfasdfasdf
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   ## Contributing
-  Github users who contributed to this project: asdfasdf
+  Github users who contributed to this project: Deon Cole
 
   ## License
-  This projec is covered under the Eclipse License.
+  This projec is covered under the Apache License.
 
   ## Tests
-  asdfsdafdsfasdsafsd
+  
 
-  ##Questions
+  ## Questions
   Contact me on GitHub: [deoncole](https://github.com/deoncole)
 
-  For additional questons please reach me at deon@email.com
+  For additional questons please reach me at deoncole77@gmail.com
 

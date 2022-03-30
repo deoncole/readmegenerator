@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 // create a constant that access the fileSystem (fs)
 const fs = require('fs');
-// const {generateMarkdown, renderLicenseBadge } =  require('./utils/generateMarkdown');
+// const to access hte generateMarkdown js
 const generateMarkdown = require('./utils/generateMarkdown');
 const { type } = require('os');
 
@@ -95,13 +95,42 @@ function init() {
             name: 'license',
             message: 'Chose the necessary license for this project (Reguired)',
             choices: licenseChoices
-        }
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Write your tests for your application and provide examples on how to run them here. (Reguired)',
+        },
+        {
+            type: 'input',
+            name: 'username',
+            message: 'Enter your GitHub user name. (Reguired)',
+            validate: usernameInput => {
+                if(usernameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide your GitHub username');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address. (Reguired)',
+            validate: usernameInput => {
+                if(usernameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide your email');
+                    return false;
+                }
+            }
+        },
     ])
     .then((userInput) => {
         generateMarkdown(userInput);
-        // renderLicenseBadge(userInput.license);
         const readmeInfo = generateMarkdown(userInput);
-        // console.log(userInput.license);
         writeToFile('./dist/README.md', readmeInfo);
     })
 }

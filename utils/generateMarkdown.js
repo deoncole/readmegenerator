@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
   if (license === ' '){
     return ' '
   } else {
-    'Licensed ubnder the' + license + ' License.'
+    return 'This projec is covered under the ' + license + ' License.'
   } 
 }
 
@@ -76,7 +76,12 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Tests
+  ${data.tests}
 
+  ##Questions
+  Contact me on GitHub: [${data.username}](https://github.com/deoncole)
+
+  For additional questons please reach me at ${data.email}
 
 `;
 }

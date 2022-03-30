@@ -2,8 +2,8 @@
 const inquirer = require('inquirer');
 // create a constant that access the fileSystem (fs)
 const fs = require('fs');
-const {generateMarkdown, renderLicenseBadge } =  require('./utils/generateMarkdown');
-// const generateMarkdown = require('./utils/generateMarkdown');
+// const {generateMarkdown, renderLicenseBadge } =  require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 const { type } = require('os');
 
 // TODO: Create an array of questions for user input
@@ -107,9 +107,9 @@ function init() {
     ])
     .then((userInput) => {
         generateMarkdown(userInput);
-        renderLicenseBadge(userInput.license);
+        // renderLicenseBadge(userInput.license);
         const readmeInfo = generateMarkdown(userInput);
-        console.log(userInput.license);
+        // console.log(userInput.license);
         writeToFile('./dist/README.md', readmeInfo);
     })
 }

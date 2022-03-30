@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   return `
   # **${data.title}**
 
-  ${renderLicenseBadge()}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -61,7 +61,9 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = {
-  generateMarkdown:generateMarkdown,
-  renderLicenseBadge:renderLicenseBadge
-};
+module.exports = generateMarkdown;
+
+// module.exports = {
+//   generateMarkdown:generateMarkdown,
+//   renderLicenseBadge:renderLicenseBadge
+// };

@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   console.log('license conntected: ' + license);
   if (license === 'MIT'){
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
   } else if (license === 'Apache'){
 
   } else if (license === 'Mozilla'){
@@ -19,7 +19,21 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'MIT'){
+    return '(https://opensource.org/licenses/ISC)'
+  } else if (license === 'Apache'){
+
+  } else if (license === 'Mozilla'){
+
+  } else if (license === 'Perl') {
+
+  } else if (license === 'Eclipse'){
+
+  } else {
+    return " ";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -30,7 +44,7 @@ function generateMarkdown(data) {
   return `
   # **${data.title}**
 
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 
   ## Description
   ${data.description}

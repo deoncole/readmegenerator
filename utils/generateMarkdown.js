@@ -29,13 +29,13 @@ function generateMarkdown(data) {
   ## Installation
   ${data.usage}
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
-  ##Contributors
+  ## Contributors
   Github user name: (#${data.contributors})
 
-  ##License
+  ## License
   ${data.license}
 
   ## Tests

@@ -19,12 +19,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions) 
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contributing](#contributing)
+  *[Tests](#tests)
+  *[Questions](#questions) 
   
   ## Installation
   ${data.usage}
@@ -32,8 +32,8 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contributors
-  Github user name: (#${data.contributors})
+  ## Contributing
+  Github users who contributed to this project: [${data.contributors}](${data.contributors})
 
   ## License
   ${data.license}

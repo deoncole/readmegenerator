@@ -1,7 +1,6 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  console.log('license conntected: ' + license);
   if (license === 'MIT'){
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
   } else if (license === 'Apache'){
@@ -64,7 +63,7 @@ function generateMarkdown(data) {
   *[Questions](#questions) 
   
   ## Installation
-  ${data.usage}
+  ${data.installation}
 
   ## Usage
   ${data.usage}

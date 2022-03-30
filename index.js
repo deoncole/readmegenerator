@@ -94,15 +94,7 @@ function init() {
             type: 'list',
             name: 'license',
             message: 'Chose the necessary license for this project (Reguired)',
-            choices: licenseChoices,
-            validate: contributorInput => {
-                if(contributorInput) {
-                    return true;
-                } else {
-                    console.log('Please provide usage instructions');
-                    return false;
-                }
-            }
+            choices: licenseChoices
         }
     ])
     .then((userInput) => {
